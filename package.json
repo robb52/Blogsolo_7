@@ -1,0 +1,7 @@
+{
+  "name": "blogsolo_7",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}

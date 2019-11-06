@@ -1,0 +1,28 @@
+<%= render 'shared/navbar' %>
+
+<div class="container">
+
+  <div class="masonry">
+
+    <% @articles.each do |article| %>
+
+      <div class="col">
+        <div class="card">
+          <%= article.title %>
+          <%= link_to image_tag(article.image, style: 'width: 100%'), article_path(article), class: "img" %>
+          <div class="card-body">
+            <%= article.text.truncate_words(25) %>
+          </div>
+        </div>
+      </div>
+
+    <% end %>
+
+  </div>
+
+</div>
+
+
+<%= link_to 'New Article', new_article_path %><br>
+<%= link_to 'Home', welcome_index_path %>
+
