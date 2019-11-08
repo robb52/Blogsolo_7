@@ -1,18 +1,21 @@
 <%= render 'shared/navbar' %>
 
 <div class="container show">
-  <div class="col-md-6">
+  <div class="col-md-6 offset-3">
     
-    <%= @article.title %>
-    
-
     <div style="width: 400px; height: auto">
-      <%= image_tag(@article.image, style: 'width: 100%') %>
+      <%= image_tag(@article.image, style: 'width: 100%', class: "show-img")  %>
+    </div>
+
+    <div class="show-title" style="text-align: center">
+     <%= @article.title %>
     </div>
 
     <%= @article.text %>
 
-    <h2>Comments</h2>
+    <div class="comments">
+      Comments
+    </div>
 
     <%= render @article.comments %>
 

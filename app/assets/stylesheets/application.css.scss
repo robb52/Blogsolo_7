@@ -1,5 +1,52 @@
 @import "bootstrap";
 
+body {
+  margin: 0;
+  background-color: #F2D3F7;
+}
+
+nav.navbar {
+  background-color: #CC46DF;
+  padding: 1em;
+  border-bottom: solid 2px #333;
+}
+
+.show-title {
+  font-size: 1.5rem;
+}
+
+.add-commet {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.comments {
+  font-size: 1.3rem;
+  margin-top: .3em;
+}
+
+.comments, .add-commet {
+  margin-bottom: .5em;
+}
+
+.col-md-6.offset-3 {
+  margin-top: 3em;
+  border: solid 1px black;
+  border-radius: 5px;
+  background-color: #333;
+  color: #929796;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.show-img {
+  width: 100%;
+  border-radius: 5px;
+  margin: 4em;
+  margin-top: 2em;
+  margin-bottom: 1em;  
+}
+
 .masonry {
   column-count: 4;
   column-gap: 1em;
